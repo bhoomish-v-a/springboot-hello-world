@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Hello World App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        nav {
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #007bff;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #2c3e50;
+        }
+        main h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        main p {
+            font-size: 1.1rem;
+            width: 65%;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>Hello World Application</header>
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+</nav>
+
+<main>
+    <h2>About This Application</h2>
+    <p>
+        This project was built using <strong>Spring Boot</strong> and <strong>Thymeleaf</strong>.
+        It demonstrates how to create dynamic web pages with server-side rendering, and how to use
+        simple HTML and CSS for a clean, responsive design.
+    </p>
+    <p>
+        You can extend this by adding more routes, connecting databases, or implementing authentication.
+    </p>
+</main>
+
+<footer>© 2025 Hello World App. Designed by Udhayan.</footer>
+</body>
+</html>
