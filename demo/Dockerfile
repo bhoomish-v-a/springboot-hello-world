@@ -1,5 +1,6 @@
 # Step 1: Use official Java runtime as a base image
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk
+
 
 # Step 2: Set working directory inside container
 WORKDIR /app
@@ -12,3 +13,4 @@ EXPOSE 8085
 
 # Step 5: Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
